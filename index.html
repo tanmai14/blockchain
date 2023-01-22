@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e59bfc239c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div id="navigation" class="container">
+        <a class="navbar-brand" href="#"><h2>ReDapp</h2></a>
+        <ul class="navbar-nav mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#about"> <h5>About Us</h5> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Login.html">
+              <h5>
+                Login
+              </h5>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Register.html"> <h5>Sign Up</h5> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="displayProdInfo.html"> <h5>Scan QR</h5> </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="main" class="container-fluid shadow mt-0 mb-3">
+      <hr />
+      <div class="container py-5">
+        <div class="jumbotron jumbotron-image">
+          <h2 class="mb-4">Blockchain Based Supply Chain Application</h2>
+          <img src="./images/giphy.gif" />
+          <br />
+          <a href="login.html" class="btn btn-primary">Get Started</a>&nbsp;
+          <a id="qrbutton" href="displayProdInfo.html" class="btn btn-primary">Scan QR <i class="fas fa-qrcode"></i
+            ></a> 
+          <!-- class="btn btn-primary" -->
+          <!-- <a href="addProd.html" class="btn btn-primary">Add Prod</a>&nbsp;
+          <a href="addStatus.html" class="btn btn-primary">Add Status</a>&nbsp;
+          <a href="displayProdInfo.html" class="btn btn-primary">Scan QR</a>&nbsp; -->
+        </div>
+      </div>
+
+      <div id="about" class="row">
+        <div class="col-6 divisions shadow">
+          <h2>About Us</h2>
+          <section>
+            ReDapp (Retail Distributed Application) is our effort to bring a
+            blockchain based implementation for the traditional,&nbsp;present
+            day supply chain management. All the key stakeholders involved in
+            the system like the Manufacturer, Distributor, Retailer and the End
+            customer can make use of this portal so that the entire chain of
+            supply is transparent, end to end traceable and hence more
+            trustworthy.
+          </section>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 divisions shadow">
+          <h2>Working</h2>
+          <section>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+            esse neque sunt rerum nisi quisquam expedita voluptatum, dignissimos
+            facilis modi dicta minima optio non inventore, quo cum magni eius
+            mollitia labore numquam saepe deserunt sapiente. Sit numquam nostrum
+            ut necessitatibus atque, enim fuga at, non earum exercitationem
+            porro nisi quam?
+          </section>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <div>
+        <h2>
+          What is a Supply Chain?
+        </h2>
+        <br>
+        <img
+          src="./images/product-supply-chain.png"
+          style="height: 322px; width: 700px"
+          alt=""
+          srcset=""
+        />
+      </div>
+    </div>
+
+<hr>
+    <footer class="card-footer mt-3">
+      <div class="container">
+        <div class="row">
+
+      <section id="address1" class="col-sm-4">
+        <span>Address:</span><br>
+        <address>#101, Marine Drive<br>
+          Mumbai, 400002
+        </address> 
+      
+      </section>
+      <section id="testimonials" class="col-sm-4"><em>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni amet hic dicta laborum atque consequuntur ipsum illum ea assumenda laudantium.
+      
+      </section></em>
+    <section class="social col-sm-4">
+      <p><strong> Connect With Us</strong></p>
+      <a href="#" target="_blank" class="fa fa-facebook"></a>&nbsp;&nbsp;
+      <a href="#" target="_blank" class="fa fa-twitter"></a>&nbsp;&nbsp;
+      <a href="#" target="_blank" class="fa fa-instagram"></a>&nbsp;&nbsp;
+      <a href="#" class="fa fa-phone"></a>
+    </section>
+    </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script> -->
+    <script src="./js/web3.min.js"></script>
+    <script src="./js/script.js"></script>
+      </body>
+</html>

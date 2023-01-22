@@ -1,0 +1,72 @@
+body{  
+  font-family: "Overpass", sans-serif;
+    background-color: #0a1931;  
+  }  
+  hr {
+    border-top:3px solid #ffc847;
+    border-radius: 15px;
+  }
+  .container {  
+      /*padding-top: 100px;  */
+      padding-right:100px;
+      padding-left: 100px;
+      padding-bottom: 100px;
+    background-color: #0a1931;  
+  }  
+    
+  input[type=text], input[type=password], textarea { 
+    color: white; 
+    font-size: medium;
+    width: 100%;  
+    padding: 15px;  
+    margin: 5px 0 15px 0;  
+    display: inline-block;  
+    background: #0a1931;  
+  }  
+  input[type=text]:focus, input[type=password]:focus , input[type=radio]:checked {  
+    background-color:#ffc947;  
+    outline: none;  
+  } 
+   div {  
+              padding: 10px 0;  
+           }  
+   
+  .registerbtn {  
+    background-color: #3dbb41;  
+    font-size: medium;
+    color: white;  
+    padding: 16px 20px;  
+    margin: 8px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 100%;  
+    opacity: 0.9;  
+  }  
+  .registerbtn:hover {  
+    opacity: 1;  
+  }  
+  h1{
+    text-align:center;
+    color: #ffc947;
+  }
+  h2{
+    text-align:justify;
+    color: #ffc947;
+  }
+  .heads{
+    color:#ffc947;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+  }
+  .typing{
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  .userinput{
+    color: #ffc947;
+  }
+  .tocolour{
+    color: #ffc947;
+  }

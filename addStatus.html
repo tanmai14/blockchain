@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e59bfc239c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  
+<body>
+  <!-- <a href="index.html" class="btn btn-primary"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>&nbsp; -->
+  <button id="logout" class="btn btn-primary" onclick="logout()"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Signout</button>
+
+        <div class="addProd">
+          <br>
+          <h1 id="init">Welcome </h1>
+                <h1>UPDATE STATUS</h1>
+      <div> 
+        <!-- <input class=button type="submit" value="SCAN QR"/>   -->
+        
+       
+          <div class="container">
+            <pre>
+
+              
+          <label><h3>ProductID:</h3></label>    <input type="text" id="prodID" disabled> 
+        <label>
+          <h3>Select QR:</h3><input class="btn btn-primary" type=file accept="image/*" 
+                           capture=environment 
+                           onchange="openQRCamera(this); read();"
+                           
+                           tabindex=-1>
+                       </label>
+            </pre>
+                
+        <h3><label>Date:</label>
+        <input type="date" id="date" name="date"
+       value="2018-07-22"
+       min="1985-01-01" max="2085-12-31"></h3>
+      
+   <h3> 
+  <p class="formfield">
+  <label for="textarea">Status Info: </label>
+  <textarea id="textarea" rows="10" cols="40"></textarea>
+</p></h3>
+      <div> 
+      <!-- <input class=button type="submit" value="Submit"/>&nbsp;&nbsp; -->
+      <button id="qrbtn"class="btn btn-primary">Update</button>
+</div>    
+  
+   <script src="./js/web3.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/addStatus.js"></script>
+<script src="./js/getData.js"></script>
+<script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+        <script src="./js/firebase.js"></script>
+        <script src="./js/login.js"></script>
+        <script>
+          function logout() {
+    firebase.auth().signOut().then(() => {
+        window.location="index.html";
+        alert("Signed Out Successfully");
+      }).catch((error) => {
+        // An error happened.
+      });    
+}
+firebase.auth().onAuthStateChanged((user) => {
+    if (user!= null) {
+        // console.log(user);
+        document.getElementById('init').append(" "+user.email)   
+    //   var uid = user.uid;
+      // ...
+    } else {
+      // User is signed out
+      // ...
+    }
+  });
+
+        </script>
+  </body>
+  </html>

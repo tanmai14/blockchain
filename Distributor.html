@@ -1,0 +1,89 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass&display=swap"
+      rel="stylesheet">
+<link rel="stylesheet" href="./css/regstyle.css">
+</head>  
+<body>  
+<form id="signup-form">  
+  <div class="container">  
+  <center>  <h1>  ReDapp  </h1> </center>  
+  <hr>  
+  <div>
+    <h1 > Distributor Registration Form </h1>
+  </div>
+  <div>
+    
+    <h2>Distributor Details:</h2>  
+    <label class="heads"> Company Name </label>   
+    <input type="text" class="typing" name="firstname" placeholder= "Enter Organisation Name" size="15" required id="cname" /> 
+    <label class="heads"> Company License Number </label>  
+    <input type="text" class="typing" name="firstname" placeholder= "Enter your License Number" size="15" required id="cnumber"/>
+
+    <h2>Owner Details:</h2>  
+<label class="heads"> Full Name: </label>   
+<input type="text" class="typing" name="firstname" placeholder= "Firstname" size="15" required id="oname"/>   
+  </div>
+<!--<div>  
+<label>   
+Designation :  
+</label>   
+  
+<select>  
+<option value="Distributor">Distributor</option>  
+<option value="Distributor">Distributor</option>  
+<option value="Retailer">Retailer</option>  
+ 
+</select>  
+</div> --> 
+<div class="tocolour">  
+<label class="heads">   
+Gender :  
+</label><br>  
+<input  type="radio" value="Male" name="gender" checked id="malerb" > Male   
+<input  type="radio" value="Female" name="gender" id="femalerb"> Female   
+<input  type="radio" value="Other" name="gender" id="otherrb"> Other  
+  
+</div>  
+<label class="heads">  
+Phone :  
+</label class="heads">  
+<input class="typing" type="text" name="country code" placeholder="Country Code"  value="+91" size="2" id="phone"/>     
+<label class="heads">
+Current Address :  
+<textarea class="typing" cols="80" rows="5" placeholder="Current Address" value="address" required id="address">  
+</textarea>  
+</label>
+ <label class="heads" for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email"  id="email" required>  
+  
+    <label class="heads" for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" id="password" required/>  
+  
+    <label class="heads" for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+    <!-- <h2>Product Details:</h2>
+    <label class="heads"> Product Name </label>   
+    <input type="text" class="typing" name="nameofproduct" placeholder= "Name of the product" size="15" required /> 
+    <label class="heads"> Product type </label>   
+    <input type="text" class="typing" name="categoryofproduct" placeholder= "Category of the product " size="15" required />  -->
+
+    <button id="register" class="registerbtn">Register</button> 
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="./js/firebase.js"></script>
+      <script>
+     
+      </script>
+      <script src="./js/register.js"></script>
+    
+</form>  
+</body>  
+</html>  
